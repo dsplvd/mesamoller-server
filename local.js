@@ -3,6 +3,6 @@ var express = require('express');
 // express.createServer()  is deprecated. 
 var server = express(); // better instead
 
-server.use('/', express.static(__dirname/files));
+server.use('/', express.static(__dirname+'/files'));
 
 server.listen(8181);
